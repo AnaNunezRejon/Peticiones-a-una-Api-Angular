@@ -1,3 +1,6 @@
+
+![Vista previa usuarios](https://github.com/AnaNunezRejon/Peticiones-a-una-Api-Angular/assets/140715043/b92068de-c055-48d7-80e3-c172dbd92191)
+
 # Http
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 17.2.1.
