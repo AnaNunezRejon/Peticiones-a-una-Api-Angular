@@ -1,0 +1,41 @@
+<section class="d-flex justify-content-center align-items-center">
+  <div class="form-container">
+    <h3>{{tipo}} USUARIO</h3>
+    <hr>
+    <form [formGroup]="usuariosForm" (ngSubmit)="getDataForm()">
+      <div>
+        <label class="form-label white-text" for="first_name">Nombre</label>
+        <input class="form-control" type="text" id="first_name" formControlName="first_name">
+      </div>
+      <div>
+        <label class="form-label white-text" for="last_name">Apellido</label>
+        <input class="form-control" type="text" id="last_name" formControlName="last_name">
+      </div>
+      <div>
+        <label class="form-label white-text" for="username">Nombre de Usuario</label>
+        <input class="form-control" type="text" id="username" formControlName="username">
+      </div>
+      <div>
+        <label class="form-label white-text" for="email">Email</label>
+        <input class="form-control" type="text" id="email" formControlName="email">
+      </div>
+      <div>
+        <label class="form-label white-text" for="image">Imagen</label>
+      </div>
+      <div class="d-flex align-items-center justify-content-between" style="margin-top: 1rem;" >
+        <input type="submit" value="Enviar" [disabled]="!usuariosForm.valid" class="btn btn-warning mt-3">
+        <a class="btn btn-sm btn-warning" style="padding: 0.5rem; margin-top: 1rem;" [routerLink]="['/usuarios']">
+          <div class="d-flex align-items-center gap-2">
+            <i class="fa-regular fa-user"></i>
+            <span>Volver a usuarios</span>
+          </div>
+        </a>
+      </div>
+    </form>
+  </div>
+  <div class="image-container">
+    <img class="form-imagen" id="previewImage" [src]="usuariosForm.get('image')?.value || '../assets/img/blank-profile-picture-973460_640.webp'" alt="Imagen del usuario">
+  </div>
+</section>
+
+

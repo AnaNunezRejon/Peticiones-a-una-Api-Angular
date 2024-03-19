@@ -1,0 +1,24 @@
+.white-text {
+  color: white;
+}
+input .white-text{
+  color: black;
+}
+section {
+  display: flex;
+  gap: 2rem;
+}
+.form-label{
+  padding-top: 1rem;
+}
+.form-imagen{
+  border-radius: 5rem;
+  max-width: 100%;
+  margin-top: 3rem;
+}
+.image-container {
+  width: 30%;
+}
+.form-container {
+  width: 70%;
+}

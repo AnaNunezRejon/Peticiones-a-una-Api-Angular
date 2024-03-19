@@ -1,0 +1,19 @@
+<section class="container mt-3">
+  <div class="card shadow p-3" *ngIf="unUsuario">
+    <div class="row">
+      <figure class="col-12 col-md-6" style="margin-right: -15px; margin-bottom: 0;">
+        <img class="img-fluid" [src]="unUsuario.image" [alt]="unUsuario.first_name">
+      </figure>
+      <div class="col-12 col-md-6 d-flex align-items-center">
+        <div>
+          <h2>{{unUsuario.first_name}}{{unUsuario.last_name}}</h2>
+          <hr>
+          <p><strong>Nombre de usuario:</strong> {{unUsuario.username}}</p>
+          <p><strong>Email:</strong> {{unUsuario.email}}</p>
+          <app-botonera [parent]="'view'" [idUsuario]="unUsuario._id"></app-botonera>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+

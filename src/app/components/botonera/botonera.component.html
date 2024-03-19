@@ -1,0 +1,29 @@
+<div class="d-flex gap-2">
+  @if(parent === 'card'){
+  <a class="btn btn-sm btn-warning" [routerLink]="['/usuario', idUsuario]">
+    <div class="d-flex align-items-center gap-2">
+      <i class="fa-solid fa-magnifying-glass mr-2"></i>
+      <span>Detalle</span>
+    </div>
+  </a>
+  } @else if (parent === 'view') {
+  <a class="btn btn-sm btn-warning" [routerLink]="['/usuarios']">
+    <div class="d-flex align-items-center gap-2">
+      <i class="fa-regular fa-user"></i>
+      <span>Volver a usuarios</span>
+    </div>
+  </a>
+  }
+  <a class="btn btn-sm btn-info" [routerLink]="['/update', 'usuario', idUsuario]">
+    <div class="d-flex align-items-center gap-2">
+      <i class="fas fa-edit"></i>
+      <span>Actualizar</span>
+    </div>
+  </a>
+  <button class="btn btn-sm btn-danger" (click)="borrarUsuario(idUsuario)">
+    <div class="d-flex align-items-center gap-2">
+      <i class="fas fa-trash-alt"></i>
+      <span>Borrar</span>
+    </div>
+  </button>
+</div>

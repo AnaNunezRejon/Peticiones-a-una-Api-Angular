@@ -1,0 +1,8 @@
+/* You can add global styles to this file, and also import other style files */
+.swal2-confirm {
+  color: #000000 !important; /* Cambia el color del texto del botón de confirmación a negro */
+}
+.swal2-title,
+.swal2-text {
+  color: rgb(255, 255, 255) !important; /* Cambia el color del texto del título y del mensaje a un blanco con cierta transparencia */
+}

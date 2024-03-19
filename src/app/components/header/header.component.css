@@ -1,0 +1,16 @@
+.color-barranavegacion{
+  background-color:  rgb(255, 217, 0);
+  font-weight: 500;
+}
+.boton-buscador{
+  color: white;
+  border-color: white;
+}
+.boton-buscador:hover{
+  background-color: rgb(255, 217, 0);
+  border-color: white;
+}
+.navbar-brand{
+  color: rgb(0, 0, 0);
+  font-weight: 600px;
+}

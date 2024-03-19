@@ -1,0 +1,13 @@
+<div class="card mb-3 custom-border">
+  <div class="d-block justify-content-center">
+    <div class="d-flex justify-content-center p-2" style="background-color: rgb(255, 217, 0);">
+      <img [src]="miUsuario.image" class="img-fluid rounded-circle" [alt]="miUsuario.first_name" style="width: 80%; height: auto;">
+    </div>
+    <div class="bg-secondary text-white">
+      <div class="card-body d-flex flex-column h-100 justify-content-center" style="background-color: rgb(22, 22, 22);">
+        <h5 class=" pb-2">{{miUsuario.first_name}} {{miUsuario.last_name}}</h5>
+        <app-botonera [parent]="'card'" [idUsuario]="miUsuario._id"></app-botonera>
+      </div>
+    </div>
+  </div>
+</div>
